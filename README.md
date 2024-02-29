@@ -1,14 +1,14 @@
 # Submission 1: Biomedical Text Document Classification
-Nama:
+Nama: Fahrul Firmansyah
 
-Username dicoding:
+Username dicoding: fahrul_firmansyah
 
 | | Deskripsi |
 | ----------- | ----------- |
 | Dataset | [Medical Text Dataset -Cancer Doc Classification](https://www.kaggle.com/datasets/falgunipatel19/biomedical-text-publication-classification) |
-| Masalah | Deskripsi masalah yang di angkat |
-| Solusi machine learning | Deskripsi solusi machine learning yang akan dibuat |
-| Metode pengolahan | Deskripsi metode pengolahan data yang digunakan |
-| Arsitektur model | Deskripsi arsitektur model yang diguanakan |
-| Metrik evaluasi | Deksripsi metrik yang digunakan untuk mengevaluasi performa model |
-| Performa model | Deksripsi performa model yang dibuat |
+| Masalah | Riset medis, khususnya dalam pengobatan kanker, adalah aspek penting yang didokumentasikan melalui publikasi ilmiah. Kanker tetap menjadi penyakit mematikan dengan jumlah kematian yang tinggi, mencapai sekitar 10 juta kasus pada tahun 2020 menurut WHO, dan trennya terus meningkat. Namun, banyaknya publikasi ilmiah tentang kanker dengan berbagai pendekatan membuat kategorisasi menjadi sulit bagi para ahli. Diperlukan upaya penggunaan teknologi dalam meningkatkan klasifikasi serta aksesibilitas informasi dalam publikasi ilmiah tentang kanker agar para peneliti dapat lebih efisien dalam memanfaatkannya untuk pengembangan solusi dan penanganan. |
+| Solusi machine learning | Machine learning merupakan bagian dari kecerdasan buatan yang memungkinkan sistem untuk mempelajari pola dari data dan melakukan klasifikasi pada data baru. Salah satu pendekatan yang populer adalah neural network, yang efektif dalam mengklasifikasikan berbagai jenis permasalahan seperti gambar dan NLP. Dengan memanfaatkan teknologi ini, kita dapat mengembangkan algoritma untuk mengelompokkan publikasi ilmiah tentang kanker secara otomatis, memudahkan para ahli dalam mencari informasi yang relevan.|
+| Metode pengolahan | Karena data yang digunakan merupakan text, maka pengolahan data yang dilakukan adalah membuat semua data menjadi satu format dengan cara merubah semua huruf kapital menjadi huruf kecil biasa. Selain itu, karena neural network hanya mampu memproses angka, maka data text harus dirubah menjadi angka dengan teknik tokenisasi. |
+| Arsitektur model | Model dimulai dengan layer input, diikuti oleh layer embedding dengan 10.000 neuron dan dimensi embedding 16. Selanjutnya, model menggunakan dropout dengan nilai 0.2, diikuti oleh global average pooling 1D. Setelah itu, dilakukan dropout dengan nilai 0.2 lagi sebelum ditutup dengan output layer yang memiliki 3 neuron sesuai dengan jumlah label pada data dengan fungsi aktivasi softmax.|
+| Metrik evaluasi | Untuk mengevaluasi kinerja model dalam melakukan klasifikasi data, beberapa metrik evaluasi yang umum digunakan adalah recall, precision, accuracy, dan loss. Metrik-metrik ini memberikan gambaran yang komprehensif tentang seberapa baik model dapat mengklasifikasikan data dengan benar serta seberapa baik model dapat mengelola kesalahan dan ketidakpastian dalam prediksi. |
+| Performa model | Model menunjukkan kinerja yang sangat baik dengan akurasi di atas 95% pada kedua data training dan data testing, serta loss di bawah 1%. Selain itu, nilai recall dan precision model juga mencapai lebih dari 95%, menandakan kemampuannya yang sangat baik dalam mengklasifikasikan data dengan benar dan meminimalkan kesalahan. |
